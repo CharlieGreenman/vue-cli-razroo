@@ -1,13 +1,15 @@
 <div>This is the show hide part of the app.</div>
 
-<button (click)="toggle$.next()" class="button">toggle</button>
+<button (v-on:click="trigger") class="button">toggle</button>
+
+{{ msg }}
 
 <script>
 export default {
   name: 'ShowHide',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'This is the showHide component'
     }
   }
 }
