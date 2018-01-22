@@ -1,8 +1,10 @@
-<div>This is the show hide part of the app.</div>
-
-<button (v-on:click="trigger") class="button">toggle</button>
-
-{{ msg }}
+<template>
+  <div>
+    This is the show hide part of the app.
+    <button v-on:click="trigger" class="button">toggle</button>
+    {{ msg }}
+  </div>
+</template>
 
 <script>
 export default {
@@ -10,6 +12,11 @@ export default {
   data () {
     return {
       msg: 'This is the showHide component'
+    }
+  },
+  methods: {
+    trigger: function (event) {
+      console.log('trigger called')
     }
   }
 }
