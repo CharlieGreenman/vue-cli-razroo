@@ -14,3 +14,12 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .button {
+    height: 50px;
+    width: 100px;
+    background: black;
+    color: white;
+  }
+</style>
