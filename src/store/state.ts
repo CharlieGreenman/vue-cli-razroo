@@ -1,5 +1,5 @@
 let showHide = {
-  show: false;
+  show: false
 }
 
 export const state = Object.assign(showHide);
